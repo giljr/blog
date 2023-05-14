@@ -15,8 +15,13 @@ module Blog
     #
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
-    #
-    # config.time_zone = "Central Time (US & Canada)"
-    # config.eager_load_paths << Rails.root.join("extras")
+ 
+    # https://stackoverflow.com/questions/6118779/how-to-change-default-timezone-for-active-record-in-rails
+    # 0 -To find your tz: rake time:zones:all
+    # 1- To run: bundle exec rake time:zones:all
+    # 2- To test: rails console > Time.zone and Time.now
+   
+    config.time_zone = "Atlantic Time (Canada)"
+    config.active_record.default_timezone = :local
   end
 end
