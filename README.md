@@ -1,32 +1,43 @@
-## My Rails Archieve - RoR WebFramework
 
-## What Exactly is This Page:
+# blog  on Ruby 💎️ on Rails 🛤️ Project  
+
+## What Exactly is This Repo:
 ```
 I just Taking notes while assisting this awesome Udemy Course:
+
 ```
->**The Complete Ruby on Rails Developer Course**
-  Learn to make innovative web apps with Ruby on Rails and unleash your creativity
-  from [Udemy](https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/)
-## Hi RoR!
-Hi, this is all about **Getting Started with Rails** From [rubyOnRails.org](https://guides.rubyonrails.org/index.html) 👌
+[The Complete Ruby on Rails Developer Course](https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/)
+
+```
+Learn to make innovative web apps with Ruby on Rails and unleash your creativity
+from Udemy platform.
+```
+
+## Hello World to RoR!
+
+Hi, this is all about **Getting Started with Rails** from [rubyOnRails.org](https://guides.rubyonrails.org/index.html) 👌
 
 Yes. Why I love Ruby on Rails Rails is - It's powerful framework that can help you become more productive and confident, when working on complex projects.
 
 Meet Ror
-```
 
-🐱‍🏍 Why is Rails used?
+🐱‍ Why is Rails used? 🐱‍
+```
 The biggest advantage to Rails is that it makes web development quick and easy. 
 This means a small team of developers can create a web app and deploy it quickly. 
 The Ruby programming language ecosystem also provides libraries that can extend 
 the Rails framework with even more pre-built features.
+
+
+🥰️ Rails is quick and easy to learn 
+
 🔒 Rails is Reassuringly secure
+
 ⛓ Rails is Exceedingly scalable.
 
-The Complete Ruby on Rails Developer Course
-Learn to make innovative web apps with Ruby on Rails and unleash your creativity
-You're more then welcome to visit my Web Pages: 
 ```
+Now feel yourself at ease; You're more then welcome to visit my Web Pages: 
+
  🧐[Jungletronics](https://medium.com/jungletronics) (Python, C, Arduino, RasPi, PIC, Eagle, Blender,  and more) 
  [KidsTronics](https://medium.com/kidstronics) (MIT App Inventor, Geogebra, LEGO, Pixy, Unity3D, Arduino For Kids, and more)
  
@@ -57,22 +68,59 @@ Use 👉 [Google Colab](https://colab.research.google.com/notebooks/welcome.ipyn
 >[Google Drive](https://drive.google.com/open?id=0B8iMbc-iQqlULW1HZXFiNnBEZUE) This gives you access to all the project's files. Please, search by # for artifacts, such as Code, Fritzing, Proteus, Schemas and more \o/
 
 
-### Projects - Ror Episodes List (from 2023 until now) :ant:
 
-😉 Project We Worked From May,2023, until now...
 
-###	Quick Start
-To get this project up and running locally on your computer:
+## Deployment
 
-Set up the RoR development environment. We recommend using a RoR  VScode.
-Assuming you have Ruby setup, run the following commands:
+To deploy this project on vscode please folow this checklist:
 
-### Check list:  
-[Would you like some help?](https://youtu.be/tr_2k87AdYQ)
-- [ ] TODO
-- [ ] TODO
+### Check list:
+0. [ ]  I am using `Ubuntu 22.04.2 LTS`  
+1. [ ]  Go to `vscode` > `Source Control` (ctrl+Shift+G);     
+2. [ ]  Press 🔘️ `Clone Git Repository to a Local Folder`; use:
+        https://github.com/giljr/blog.git
+3. [ ]  Choose a folder; mine is: `Documents/ruby/rails/`
+4. [ ]  Press 🔘️ `Select as Repository Destination` and `open the cloned repo`;
+5. [ ]  Install & Open `DBeaver` (https://dbeaver.io/);
+6. [ ]  Go To Menu: `Database` > `New Database Connection` > `SQLite JDBC driver` > `next` > 🔘️ `Open`;
+7. [ ]  Point to: `Documents/ruby/rails/blog/db/development.sqlite3`
+8. [ ]  Select 🔘️  `Finish`;
+9. [ ]  Select `USER` table view and confirm if `user.id = 1` was created;
+10. [ ]  Exit from `DBeaver`;
+11. [ ]  Go to models /`user.rb `file and please uncommet this code: 👉️ `has_secure_password`;
+12. [ ]  On Terminal, run:
+```
+ rails db:migrate
+ rails console
+    user = User.create(username:"j3", email:"j3@gmail.com")
+    user.save
+    exit
+  rails server
+```
+13. [ ]  Now browse to `localhost:3000` and 😍️ You Are Good To Go! 😍️;
+
+
+
+
+
+[Would you like some more help?]()
+
+
+
+
+## Authors
+- [@giljr](https://www.github.com/giljr)
+
+
+## Contributing
+
+- [@pomper](https://www.github.com/pomper)
+- [@moschine](https://www.linkedin.com/in/luiz-felipe-batista-moschini-4938a0211/)
+- [@jeovan](https://www.linkedin.com/in/jeovan-farias-6283b8145/)
+- [@diego_nogueira](https://www.linkedin.com/in/diego-sousa-nogueira/)
+
+Contributions are always welcome!
 
 ### License
 
 [![License: CC BY-NC-ND 3.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%203.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/3.0/)
- 
