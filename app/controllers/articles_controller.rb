@@ -25,16 +25,22 @@ class ArticlesController < ApplicationController
   # POST /articles or /articles.json
   # # render plain: params[:article].inspect -> not working?
   def create   
-    @article = Article.new(article_params)     
-    # @article = Article.new(params.require(:article).permit(:title, :description)) 
-    if @article.save
-      flash[:notice] = "Article was created sucessfully!"
-    # GET "/articles/12"
-    # redirect_to article_path(@article.id)
-      redirect_to @article
-    else
-      render "new"
-    end
+    @article = Article.new(article_params)   
+    @article.user = User.first
+    # # p @article.inspect 
+    # p  @article.save!
+    # p "Passou Create"
+    # # @article = Article.new(params.require(:article).permit(:title, :description)) 
+     @article.save  
+       
+    #   flash[:notice] = "Article was created sucessfully!"
+    # # GET "/articles/12"
+    # # redirect_to article_path(@article.id)
+       redirect_to @article
+    # else
+    #   render "new"
+    #render "create"
+     
   end
     
 
@@ -55,7 +61,7 @@ class ArticlesController < ApplicationController
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
-    redirect_to articles_path
+    redirect_to articles_path, notice: "Article destroyed successfully!"
   end
 
   

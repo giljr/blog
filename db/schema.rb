@@ -19,10 +19,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_14_221803) do
     t.integer "user_id"
   end
 
-  create_table "email_users", force: :cascade do |t|
-    t.string "email"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.datetime "created_at", null: false
