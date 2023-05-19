@@ -106,7 +106,7 @@ To deploy this project on vscode please folow this checklist:
 [Would you like some more help?]()
 
 ## Tags
-### [blog_v1]((/../../tags/):)
+### [blog_v1](/../../tags/)
 ```
 git tag -a blog_v1 -m "Blog in Rails - v1.0:  from http://jungletronics.com" 
                        -m "1- Use this release to get started with this project" 
