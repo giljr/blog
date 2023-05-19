@@ -2,6 +2,7 @@
 <% if false %> <%= render @article %> <% end %>
 <p><strong>Title:  </strong><%= @article.title %></p>
 <p><strong>Description:  </strong><%= @article.description %></p>
+<p><strong>By: </strong> <%= @article.user.username if @article.user %> </p>
 <div>
   <%= link_to "Edit this article", edit_article_path(@article) %> |
   <%= link_to "Back to articles", articles_path %> |
