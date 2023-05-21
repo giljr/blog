@@ -33,15 +33,20 @@ Meet Ror
 The biggest advantage to Rails
 is that it makes web development
 quick and easy. 
-This means a small team of developers
-can create a web app and deploy it quickly. 
-The Ruby programming language ecosystem
-also provides libraries that can extend 
+This means a small team 
+of developers
+can create a web app and deploy
+it quickly. 
+The Ruby programming language 
+ecosystem
+also provides libraries that 
+can extend 
 the Rails framework with 
 even more pre-built features.
 
 
-🥰️ Rails is quick and easy to learn 
+🥰️ Rails is quick 
+   and easy to learn 
 
 🔒 Rails is Reassuringly secure
 
