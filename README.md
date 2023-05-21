@@ -101,8 +101,6 @@ To deploy this project on vscode please folow this checklist:
 
 
 
-
-
 [Would you like some more help?]()
 
 ## Tags
