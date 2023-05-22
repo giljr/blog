@@ -27,15 +27,6 @@ setup do
     get new_category_url
     assert_response :success
   end
-
-  # test "should create category" do
-  #   assert_difference("Category.count") do
-  #     post categories_url, params: { category: {  } }
-  #   end
-
-  #   assert_redirected_to category_url(Category.last)
-  # end
-
   
   # if we not create @category, then we should not route it :/
   test "should show category" do
@@ -60,4 +51,14 @@ setup do
 
   #   assert_redirected_to categories_url
   # end
+
+  # Latest video 184; When create a new category, count & redirect
+  test "should create category" do
+    assert_difference("Category.count") do
+      post categories_url, params: { category: { name: "Travel" } }
+    end
+  
+      assert_redirected_to category_url(Category.last)
+    end
+  
 end
