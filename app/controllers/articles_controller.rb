@@ -31,7 +31,7 @@ class ArticlesController < ApplicationController
     # p  @article.save!
     # p "Passou Create"
     # # @article = Article.new(params.require(:article).permit(:title, :description)) 
-     @article.save  
+     @article.save!  
        
     #   flash[:notice] = "Article was created sucessfully!"
     # # GET "/articles/12"
