@@ -137,6 +137,18 @@ git tag -a blog_v1 -m "Blog in Rails - v1.0:  from http://jungletronics.com"
  
 git push origin blog_v1.
 ```
+## Tags
+### [blog_v2](/../../tags/)
+```
+git tag -a blog_v2 -m "Blog in Rails - v2.0:  from http://jungletronics.com" 
+                       -m "1- Boostrap inclusion" 
+                       -m "2- Delete fix" 
+                       -m "Thank you jeovan for fix project 😍️"  
+                       
+git push origin blog_v2
+```                     
+ 
+
 1. Go to tab tags to download this release
 obs: Type this peace of code above in one line on terminal to create one :)
 
